@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground Normal
+    uniqueID: 1856211471
+    locked: 0
+  - name: Ground Border
+    uniqueID: 2767849321
+    locked: 0
+  - name: Water
+    uniqueID: 3086932263
+    locked: 0
+  - name: Accesories Border
+    uniqueID: 1123455083
+    locked: 0
+  - name: Platforms
+    uniqueID: 322772799
+    locked: 0
+  - name: Accessories Floor
+    uniqueID: 3237214509
+    locked: 0
+  - name: Obstacles Back
+    uniqueID: 2551475881
+    locked: 0
+  - name: Obstacles Front
+    uniqueID: 1204388319
+    locked: 0
+  - name: Player
+    uniqueID: 859598307
+    locked: 0
