@@ -23,9 +23,7 @@ public class GameManager : MonoBehaviour{
     public PlayerController player;
     //public weapon
     public FloatingTextManager floatingTextManager;
-    //Logic
-    public int pesos;
-    public int experience;
+    public InventoryManager inventoryManager;
 
     public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration){
         floatingTextManager.Show(msg,fontSize,color,position,motion,duration);
@@ -35,8 +33,6 @@ public class GameManager : MonoBehaviour{
         print("SaveState");
         string s= "";
         s +="0"+"|";
-        s += pesos.ToString() + "|";
-        s += experience.ToString() + "|";
         s +="0";
         PlayerPrefs.SetString("SaveState",s);
     }
@@ -45,8 +41,6 @@ public class GameManager : MonoBehaviour{
         SceneManager.sceneLoaded -=LoadState;
         if(!PlayerPrefs.HasKey("SaveState")) return;
         string[] data =PlayerPrefs.GetString("SaveState").Split('|');
-        pesos =int.Parse(data[1]);
-        experience =int.Parse(data[2]);
     }
 
 }
