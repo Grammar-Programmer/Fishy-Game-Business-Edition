@@ -1,7 +1,9 @@
 
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour{
     public static GameManager instance;
@@ -24,9 +26,15 @@ public class GameManager : MonoBehaviour{
     //public weapon
     public FloatingTextManager floatingTextManager;
     public InventoryManager inventoryManager;
+    public int money=0;
+    public Text textMoney;
+    public void setMoney(int value){
+        money+=value;
+        textMoney.text=money.ToString();
+    }
 
-    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration){
-        floatingTextManager.Show(msg,fontSize,color,position,motion,duration);
+    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration,Boolean forever=false){
+        floatingTextManager.Show(msg,fontSize,color,position,motion,duration,forever);
     }
     //Save state
     public void SaveState(){

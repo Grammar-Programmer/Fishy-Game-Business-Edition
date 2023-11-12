@@ -9,12 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ba218d47d32af488f9ef7bcbea47ee, type: 3}
-  m_Name: Bait_worm
+  m_Script: {fileID: 11500000, guid: 1dac1cd492b30d44d8ed9ed92500f4dc, type: 3}
+  m_Name: Shark
   m_EditorClassIdentifier: 
   tile: {fileID: 0}
-  type: 0
-  actionType: 0
+  type: 2
+  actionType: 1
   range: {x: 5, y: 4}
   stacktable: 1
-  image: {fileID: -1666563722, guid: 87c74d4bc24fdb14f9e56312a9c2bde6, type: 3}
+  image: {fileID: 21300000, guid: 3df32daac35a01048a729847562d92fa, type: 3}
+  price: 500

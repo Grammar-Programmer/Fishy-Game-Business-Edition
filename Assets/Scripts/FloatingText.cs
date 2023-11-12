@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ public class FloatingText
     public Vector3 motion;
     public float duration;
     public float lastShown;
+    public Boolean forever;
     public void Show(){
         active = true;
         lastShown = Time.time;
@@ -19,7 +21,7 @@ public class FloatingText
         go.SetActive(active);
     }
     public void UpdateFloatingText(){
-        if(!active) return;
+        if(!active || forever) return;
         if(Time.time-lastShown>duration) Hide();
         go.transform.position+=motion*Time.deltaTime;
     }

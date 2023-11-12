@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,7 @@ public class FloatingTextManager : MonoBehaviour{
         foreach(FloatingText txt in floatingTexts)
         txt.UpdateFloatingText();
     }
-    public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration){
+    public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration,Boolean forever){
         FloatingText floatingText=GetFloatingText();
         print(floatingText);
         floatingText.txt.text=msg;
@@ -19,11 +20,12 @@ public class FloatingTextManager : MonoBehaviour{
         floatingText.go.transform.position= Camera.main.WorldToScreenPoint(position); //Transform wolrd space to screen space so we can use it the UI
         floatingText.motion=motion;
         floatingText.duration=duration;
+        floatingText.forever=forever;
         floatingText.Show();
 
     }
-    private FloatingText GetFloatingText(){
-        FloatingText txt= floatingTexts.Find(t=>!t.active);
+    public FloatingText GetFloatingText(){
+        FloatingText txt= floatingTexts.Find(t=>t.active);
         if(txt==null){
             txt =new FloatingText();
             txt.go =Instantiate(textPrefab);

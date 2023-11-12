@@ -1,14 +1,19 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler{
+public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler,IPointerEnterHandler,IPointerExitHandler{
     [Header("UI")]
     public Image image;
     public Text countText;
     [HideInInspector] public Item item;
     [HideInInspector] public int count=1;
     [HideInInspector] public Transform parentAfterDrag;
+    public Button button;
+    public InventoryItem(Item item){
+        this.item=item;
+    }
     private void Start(){
         InitialiseItem(item);
     }
@@ -23,19 +28,33 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         countText.gameObject.SetActive(textActive);
     }
     public void OnBeginDrag(PointerEventData eventData){
-       image.raycastTarget=false;
-       parentAfterDrag = transform.parent;
-       transform.SetParent(transform.root);
-       transform.SetAsLastSibling();
+        if(GameManager.instance.inventoryManager.normalMode){
+            image.raycastTarget=false;
+            parentAfterDrag = transform.parent;
+            transform.SetParent(transform.root);
+            transform.SetAsLastSibling();
+        }
     }
 
     public void OnDrag(PointerEventData eventData){
-       transform.position= Input.mousePosition;
+        if(GameManager.instance.inventoryManager.normalMode) transform.position= Input.mousePosition;
 
     }
 
     public void OnEndDrag(PointerEventData eventData){
-        image.raycastTarget=true;
-        transform.SetParent(parentAfterDrag);
+        if(GameManager.instance.inventoryManager.normalMode){
+            image.raycastTarget=true;
+            transform.SetParent(parentAfterDrag);
+        }
+    }
+    public void OnPointerEnter(PointerEventData eventData){
+        print("OnPointerEnter");
+       if(!GameManager.instance.inventoryManager.normalMode)
+        if(button.name.Equals("Sell") && item.type.Equals(Item.ItemType.Fish)) button.gameObject.SetActive(true);
+        else if(button.name.Equals("Buy")) button.gameObject.SetActive(true);
+    }
+
+    public void OnPointerExit(PointerEventData eventData){
+       if(!GameManager.instance.inventoryManager.normalMode) button.gameObject.SetActive(false);
     }
 }
