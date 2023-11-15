@@ -14,6 +14,8 @@ public class Item : ScriptableObject{
     public bool stacktable= true;
     [Header("Both")]
     public Sprite image;
+    public int price;
+    
 
     public enum ItemType{
         Bait,
