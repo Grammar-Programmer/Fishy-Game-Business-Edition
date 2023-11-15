@@ -1,0 +1,2604 @@
+fileFormatVersion: 2
+guid: 0b400188039c0ae48bd042d7631ae641
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FisihingRod_Basic
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445f30622e7e4df4b92cf8e7085b6c27
+      internalID: -971842751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FisihingRod_advanced
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 310
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b8e3ab881360347a945aff8fbbccf0
+      internalID: -1829525181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FisihingRod_legendary
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4807accfb735e6045ba0fe87011d2445
+      internalID: 171548974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a28100da93e03448b3f55ac2737a43f
+      internalID: -1375313537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_4
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba4c8ab4a1cac340ba02658fa364c24
+      internalID: -1677365789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: d
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ab75f1ecfe3df4da1f4057f36a9850
+      internalID: 64788594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690e07088382fe3429610eaec6d03ead
+      internalID: -1523606368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373829a03391f404cb3e46649f92e7cd
+      internalID: -2138540687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_8
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64614115725959041a7d14ac3c73047f
+      internalID: 1945484007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_9
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2f2ebf0a4731047b77ae6f391ddd0f
+      internalID: 355023891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_10
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ff3e810de612145a044117efae0808
+      internalID: 820823882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_11
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26a58f4e88a7824a9a09761814a7bff
+      internalID: 492364015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_12
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728098997b24c5646aeaaba6d6729c11
+      internalID: 1517801695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_13
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 309.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37163e7bfaec1b24a872c7c9ae0c65fc
+      internalID: 1697795328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a541886be85464a4796bbcc22cc95d01
+      internalID: 1156299005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_15
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfda5a50a715dbf43ae6aa67f3ee3740
+      internalID: -1614235733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_16
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddca43600b9022b4abc424153a86fa6b
+      internalID: -423955936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_17
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b677f29a563280a4b859b297c3291734
+      internalID: 1723162185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_18
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661f6e492acc5fa4284d502ba2fa5e40
+      internalID: -2071385556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_19
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc61a420439b3004fa6fcf02e0ef19e7
+      internalID: -1871942306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bait_legendaty
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12d36d8adea0c846b0d6181769449b1
+      internalID: 1176214837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_21
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4533c86dde31ce748875daee122bf2db
+      internalID: 1309209688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_22
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc2cd701a6ca1044aad892f6aae169d
+      internalID: 1705781157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_23
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1648f3da24a75469cd1e56efb91ca4
+      internalID: -538836747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_24
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59237b2e8022be84294bcaad59e68187
+      internalID: 566834558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_25
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155001348129ba64a8873b43878cb1b7
+      internalID: 2056146103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_26
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4691c2fc2ffcb1342a29a772b9d4bd7b
+      internalID: 276213255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bait_expert
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 265.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7392e6119a2181a4ca89da13033e1204
+      internalID: 979829486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1e8ce68a61d214cb3d3b606ca5156f
+      internalID: -1787522021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_29
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc02ad6488167149b0d45c2626ac030
+      internalID: -2142490245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_30
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90025243d2ed1484a866a9da16d570df
+      internalID: 1658342059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_31
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fcb99c47f5f5d4a84d37f7f747635c
+      internalID: -1126615279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_32
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2a7e1b36063464bbf5681e84914cc9
+      internalID: 1819117020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_33
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168f65a453d460743878e28680b49369
+      internalID: -1897388489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_34
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d234e746014d704abb06015cbaae219
+      internalID: 1340937383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_35
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5039eb8909c3d2f45a0007a0aea68ae2
+      internalID: 1508649778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_36
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148a739777e057043b0d23fc83e77622
+      internalID: -2002939019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_37
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e2b1c1d59edb14a882695a2be1b10f
+      internalID: -1784596532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_38
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3d654e9a52c854999f29ed15dcc4c2
+      internalID: 1256373092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_39
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd67341c45290245b79f08d1a30f5dd
+      internalID: -1077532208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_40
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937679eb78ae1974c82cd32dae751602
+      internalID: 1074732436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_41
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 221.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01004e71b4468ba4f8730ffeaa63524a
+      internalID: 152987450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_42
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7276a0a84db40f54f91a753718880fef
+      internalID: -141954995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_43
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4a2473fbeadec49a6e0e611009b951
+      internalID: -1962661456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_44
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8638bb0b8ddd5a42af033c254279542
+      internalID: 1028974555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_45
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1346fc2e73f1a4090bf53617040f5a
+      internalID: -1397440659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_46
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a698ff78f584764da3c37415ecfc7f6
+      internalID: -517240590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_47
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138c331fb1f0cf04f9cdd7701575248b
+      internalID: -1613983572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_48
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169e6ba56eb24c048bdb0772f98b6cf0
+      internalID: 1346949076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_49
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41227d189e4db3a4cb1867c6de9bedf1
+      internalID: 1977921244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_50
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73a7c016838bcd40a11b0b8c6736f07
+      internalID: 1914555373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_51
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5742ba74c21754bb58e593d3edbb4a
+      internalID: 808152886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_52
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efee69a225598ce46b25141a963d88ea
+      internalID: 1962435075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_53
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9915b7f12e649bb4ba41b41b8ccac530
+      internalID: -457600296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_54
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b353e3a897f284ab8654a6d8cee2ee
+      internalID: 495405448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_55
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 177.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5659bdf10bcec38448db1b427ff89bd6
+      internalID: 1996385650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_56
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6771049d42ec6084db32d4eddd9be250
+      internalID: 791286974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_57
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626add599087af6489aec8711665ccd8
+      internalID: -308068698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_58
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e09a5883941b89439aaebb6ab9b7f6d
+      internalID: -1467939162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_59
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24321833539c02643b0606d8316600e4
+      internalID: -548234941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_60
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9372bb200d6a1c54ba8197739c72adef
+      internalID: 1608786587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_61
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4f47c657e81a841b6f775c26829ca8
+      internalID: -473826886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_62
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e5701dbf5f58a4d85a57bd49f848cc
+      internalID: -431369091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_63
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2d896d1e50f1f488760f5f364cd76b
+      internalID: -872436515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_64
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173812bd5a72d0945b1b5ad4aa73307b
+      internalID: -1123815805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bait_advaced
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ce92cadde565d4c95bd4132c4cace7
+      internalID: 1274784097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_66
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789d9a4b91741664f85adb350d06dbe2
+      internalID: -1627776895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_67
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d7ba12edd030c41868291ed1e881ab
+      internalID: -342053745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_68
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10461f8d10136e4ea7b4592481ce88c
+      internalID: 1528176736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_69
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 133.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d1d62476b2f494cb777c30e49d2efc
+      internalID: 1836521100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_70
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28ee7b47a094d6498d605b3815ed4be
+      internalID: -1915127504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_71
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e0dbb0e23bd1b4691563a682e040db
+      internalID: -1705438390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_72
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9074fe664d530e14aa0c66290197be98
+      internalID: 2086777931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_73
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f575d241fe1aaa45918ad2363d90a83
+      internalID: -2090983218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_74
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb87864fdcc0fbb41ae4c0e28d565a1a
+      internalID: -565061769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_75
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b29ec77af3c9934585986950b92780d
+      internalID: -949478154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_76
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cdea1f60ca8954b9774cbd3cf2ec0a
+      internalID: -727672364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_77
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09a9602130505741b3a76cc03f65bbf
+      internalID: 86605455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_78
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cee7983c82410547b9cdf61e95918e2
+      internalID: 22401227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_79
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049536022d955434db623d1771e3189c
+      internalID: 250301564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_80
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc724a2c254412b46b1e5f73606e6252
+      internalID: 793982981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_81
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb30c2a3c5ae89438c9fbd0e1c171d2
+      internalID: -137668602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_82
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e448313af93f4ef4f8897813bc24eea4
+      internalID: 1629967961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_83
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 89.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75536d0b265c43a4abc5f14e1e0864d5
+      internalID: -1180263454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_84
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd000e7d09f6dd43a91316204b8d709
+      internalID: 674734583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_85
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a24500105d41e84f9fc37fdcd515365
+      internalID: 603664428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_86
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bde02d25e72804bbf5e1e1effed5cf
+      internalID: -1759237717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_87
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b11bf24cf328d459d7a70c66fe2070
+      internalID: -1454024523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_88
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1adba8704a07bda46812a836d3b1d185
+      internalID: 1967242090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_89
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a516a102ce5d0394393671d3d073d15f
+      internalID: 1528048124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_90
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577ec2e7d3118264d8b907b3d839231d
+      internalID: -1202245360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_91
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c0803a52493ae40a8cf5646ff3ee6b
+      internalID: -1396345902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_92
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e52bca11fe18248a2a0321fe433d77
+      internalID: 129378592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_93
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f343a584a61b3448bbc7d8e8b3f03fc
+      internalID: -1863819616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_94
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e70b76de22bc743870c83a739e041f
+      internalID: 1582720500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_95
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4ba19f71e2d904381bf005487ab5c8
+      internalID: -290897760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_96
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce31408cc10e62449c8eb80c7d5e52b
+      internalID: -1299253909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_97
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 45.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792c97ea2bc1ba14b9639944a4ef126c
+      internalID: -1284476660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_98
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8070a7ab801a92488b10b554150baf3
+      internalID: -88713139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_99
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f1160af243bf3459c90b1fdad4de59
+      internalID: 565247187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_100
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6a33f5d65cd984cac622454abf0c9b
+      internalID: 1260202791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_101
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9ab25e1419633448d6dae43e074201
+      internalID: -1524941726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_102
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ea1ed92439e974c8c8d91408c143ca
+      internalID: -547557861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_103
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9353c523b20a2468aa341edbaacbdd
+      internalID: -855688076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_104
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62172c051c2aee4a90c48e6dbbd6d3e
+      internalID: -1808391319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_105
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42b32858b68a9b418f261e2c2a25020
+      internalID: 1711120445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_106
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d86b2f4b7d998b4491b1f77bdccaa83
+      internalID: 1993549226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_107
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1712f1855b6b6e247ba86155a11a779d
+      internalID: -769025975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_108
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1539d8361df73a14e9e12722b2bd6304
+      internalID: -1648958607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_109
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a6aab93391fe64fa87d8ce97847f42
+      internalID: 670758088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_110
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1719acbe627af4b9e06b0b49f3c763
+      internalID: -96705750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fishing-and-Sea-Pixel-Art-RPG-Icons_111
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1.75
+        width: 50.07143
+        height: 44.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f74134907055864184c0f76eb9153d0
+      internalID: -676529153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bait_advaced: 1274784097
+      Bait_expert: 979829486
+      Bait_legendaty: 1176214837
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_10: 820823882
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_100: 1260202791
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_101: -1524941726
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_102: -547557861
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_103: -855688076
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_104: -1808391319
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_105: 1711120445
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_106: 1993549226
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_107: -769025975
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_108: -1648958607
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_109: 670758088
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_11: 492364015
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_110: -96705750
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_111: -676529153
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_12: 1517801695
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_13: 1697795328
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_14: 1156299005
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_15: -1614235733
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_16: -423955936
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_17: 1723162185
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_18: -2071385556
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_19: -1871942306
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_21: 1309209688
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_22: 1705781157
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_23: -538836747
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_24: 566834558
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_25: 2056146103
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_26: 276213255
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_28: -1787522021
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_29: -2142490245
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_3: -1375313537
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_30: 1658342059
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_31: -1126615279
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_32: 1819117020
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_33: -1897388489
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_34: 1340937383
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_35: 1508649778
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_36: -2002939019
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_37: -1784596532
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_38: 1256373092
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_39: -1077532208
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_4: -1677365789
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_40: 1074732436
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_41: 152987450
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_42: -141954995
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_43: -1962661456
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_44: 1028974555
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_45: -1397440659
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_46: -517240590
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_47: -1613983572
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_48: 1346949076
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_49: 1977921244
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_50: 1914555373
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_51: 808152886
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_52: 1962435075
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_53: -457600296
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_54: 495405448
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_55: 1996385650
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_56: 791286974
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_57: -308068698
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_58: -1467939162
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_59: -548234941
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_6: -1523606368
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_60: 1608786587
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_61: -473826886
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_62: -431369091
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_63: -872436515
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_64: -1123815805
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_66: -1627776895
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_67: -342053745
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_68: 1528176736
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_69: 1836521100
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_7: -2138540687
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_70: -1915127504
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_71: -1705438390
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_72: 2086777931
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_73: -2090983218
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_74: -565061769
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_75: -949478154
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_76: -727672364
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_77: 86605455
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_78: 22401227
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_79: 250301564
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_8: 1945484007
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_80: 793982981
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_81: -137668602
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_82: 1629967961
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_83: -1180263454
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_84: 674734583
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_85: 603664428
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_86: -1759237717
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_87: -1454024523
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_88: 1967242090
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_89: 1528048124
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_9: 355023891
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_90: -1202245360
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_91: -1396345902
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_92: 129378592
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_93: -1863819616
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_94: 1582720500
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_95: -290897760
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_96: -1299253909
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_97: -1284476660
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_98: -88713139
+      Fishing-and-Sea-Pixel-Art-RPG-Icons_99: 565247187
+      FisihingRod_Basic: -971842751
+      FisihingRod_advanced: -1829525181
+      FisihingRod_legendary: 171548974
+      d: 64788594
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

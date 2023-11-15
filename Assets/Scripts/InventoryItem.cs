@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -10,10 +11,8 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     [HideInInspector] public Item item;
     [HideInInspector] public int count=1;
     [HideInInspector] public Transform parentAfterDrag;
+    public bool canBeDestroyed=false;
     public Button button;
-    public InventoryItem(Item item){
-        this.item=item;
-    }
     private void Start(){
         InitialiseItem(item);
     }
@@ -49,12 +48,21 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     }
     public void OnPointerEnter(PointerEventData eventData){
         print("OnPointerEnter");
-       if(!GameManager.instance.inventoryManager.normalMode)
-        if(button.name.Equals("Sell") && item.type.Equals(Item.ItemType.Fish)) button.gameObject.SetActive(true);
-        else if(button.name.Equals("Buy")) button.gameObject.SetActive(true);
+        if(!GameManager.instance.inventoryManager.normalMode)
+        if(button.name.Split()[0].Equals("Sell") && item.type.Equals(Item.ItemType.Fish)) button.gameObject.SetActive(true);
+        else if(button.name.Split()[0].Equals("Buy")) button.gameObject.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData){
-       if(!GameManager.instance.inventoryManager.normalMode) button.gameObject.SetActive(false);
+        print("OnPointerExit");
+        if(!GameManager.instance.inventoryManager.normalMode) button.gameObject.SetActive(false);
     }
+    void OnMouseDown() {
+        print("OnMouseDown");
+        if(canBeDestroyed) Destroy(this.gameObject);
+    }
+    // private void Update() {
+    //     print("Update");
+    //     if(canBeDestroyed && Input.GetMouseButtonDown(0)) Destroy(this.gameObject);
+    // }
 }

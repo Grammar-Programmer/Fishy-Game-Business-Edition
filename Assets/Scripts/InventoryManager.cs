@@ -17,11 +17,40 @@ public class InventoryManager : MonoBehaviour{
     public Boolean normalMode=true;
     public void Start(){
         for (int i = 0; i < initialItems.Length; i++)
-            addToSelectedInventory(initialItems[i],traderInventory,"Buy");
+            addToSelectedInventory(initialItems[i],traderInventory,"Buy by "+initialItems[i].price);
+    }
+    public void uptadeTrader(){
+        LinkedList<Item> items=new LinkedList<Item>();
+        InventoryItem inventoryItem;
+        foreach(InventorySlot inventorySlot in traderInventory){
+            inventoryItem=inventorySlot.GetComponentInChildren<InventoryItem>();
+            if(inventoryItem!=null){
+                print("ola");
+                items.AddLast(inventoryItem.item);
+                Destroy(inventoryItem.gameObject);
+            }
+        }
+        int i=0;
+        foreach(Item item in items){
+            spawnNewItem(item,traderInventory[i],"Buy by "+item.price);
+            i++;
+        }
+
+
+        // for (int i = 0; i < traderInventory.Length; i++){
+        //     if(traderInventory[i].GetComponentInChildren<InventoryItem>()!=null) continue;
+        //     for (int j = i+1; j < traderInventory.Length; j++){
+        //         if(traderInventory[j].GetComponentInChildren<InventoryItem>()!=null){
+        //         traderInventory[i]=traderInventory[j];
+        //         break;
+        //         }
+        //     }
+        //  }
+
     }
     public void addItem(Item item){
-        if( item.type.Equals(Item.ItemType.Bait)) addToSelectedInventory(item,baitInventory,"Sell");
-        else addToSelectedInventory(item,inventorySlot,"Sell");
+        if( item.type.Equals(Item.ItemType.Bait)) addToSelectedInventory(item,baitInventory,"Sell by "+item.price);
+        else addToSelectedInventory(item,inventorySlot,"Sell by "+item.price);
     }
     public void addToSelectedInventory(Item item, InventorySlot[] inventory,String tag){
 
@@ -71,5 +100,8 @@ public class InventoryManager : MonoBehaviour{
         inventoryItem.InitialiseItem(item);
         inventoryItem.button.name=tag;
         inventoryItem.button.GetComponentInChildren<Text>().text=tag;
+    }
+    public void setFishingRod(InventorySlot inventorySlot){
+        selectedFishingRod=inventorySlot;
     }
 }

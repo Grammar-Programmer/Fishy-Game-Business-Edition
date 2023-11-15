@@ -22,7 +22,7 @@ public class Trading : MonoBehaviour{
     public void trading(){
         InventoryItem inventoryItem=GetComponentInParent<InventoryItem>();
         InventoryManager inventoryManager=GameManager.instance.inventoryManager;
-        String action=button.name;
+        String action=button.name.Split()[0];
         Item item=inventoryItem.item;
         if(action.Equals("Buy"))inventoryManager.buy(item,inventoryManager.traderInventory);
         else inventoryManager.sell(item,inventoryManager.inventorySlot);
