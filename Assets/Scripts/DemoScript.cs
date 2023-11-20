@@ -8,4 +8,13 @@ public class DemoScript : MonoBehaviour{
     public void PickupItem(int id){
         inventoryManager.addItem(itemsToPickup[id]);
     }
+    public void addRandomCommumFish(){
+        inventoryManager.addItem(inventoryManager.getCommumFish());
+    }
+    public void addRandomRareFish(){
+        inventoryManager.addItem(inventoryManager.getRareFish());
+    }
+    public void addRandomLegendaryFish(){
+        inventoryManager.addItem(inventoryManager.getLegendaryFish());
+    }
 }

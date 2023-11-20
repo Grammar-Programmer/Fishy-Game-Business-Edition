@@ -14,6 +14,7 @@ public class InventorySelectedBaitSlot : InventoryBaitSlot{
             newInventoryItem.InitialiseItem(inventoryItem.item);
             newInventoryItem.canBeDestroyed=true;
             newInventoryItem.count=inventoryItem.count;
+            GameManager.instance.inventoryManager.setBait((Bait)newInventoryItem.item);
         }
     }
 }
