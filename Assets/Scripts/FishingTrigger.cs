@@ -8,27 +8,29 @@ public class FishingTrigger : MonoBehaviour{
     public GameObject playerInventory;
     public GameObject traderInventory;
     public GameObject activeSlots;
+    private int numberOfTries=0;
+    private double mediaOfBiome=0.8;
+    private double varianceOfBiome=0.2;
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Player")) GameManager.instance.ShowText("Press E to Start Fishing",15,Color.yellow,transform.position,Vector3.up,0,true); 
     }
     private void OnTriggerStay2D(Collider2D other){
+        FishingRod fisihingRoad=GameManager.instance.inventoryManager.selectedFishingRod;
         if(other.CompareTag("Player") && Input.GetKey(KeyCode.E)){
             GameManager.instance.floatingTextManager.GetFloatingText().Hide();
-            GameManager.instance.inventoryManager.normalMode=false;
-            playerInventory.SetActive(true);
-            activeSlots.SetActive(false);
-            // playerInventory.transform.Find("CharacterActiveSlots").gameObject.SetActive(false);
-            traderInventory.SetActive(true);
-        }else if(other.CompareTag("Player") && !traderInventory.activeSelf) GameManager.instance.ShowText("Press E to trade",15,Color.yellow,transform.position,Vector3.up,0,true);
+            if(fisihingRoad==null){
+                GameManager.instance.ShowText("You dont have a selected FishingRod",15,Color.yellow,transform.position,Vector3.up,5,false);
+            }else{
+                if(fisihingRoad.startFishing(numberOfTries)){
+
+                }else numberOfTries++;
+            }
+        }else if(other.CompareTag("Player") && !traderInventory.activeSelf) GameManager.instance.ShowText("Press E to Start Fishing",15,Color.yellow,transform.position,Vector3.up,0,true);
     }
     private void OnTriggerExit2D(Collider2D other) {
         if(other.CompareTag("Player")){
-            GameManager.instance.ShowText("Press E to Start Fishing",15,Color.yellow,transform.position,Vector3.up,0,true); 
+            GameManager.instance.floatingTextManager.GetFloatingText().Hide();
             if(playerInventory!=null){
-                playerInventory.SetActive(false);
-                traderInventory.SetActive(false);
-                activeSlots.SetActive(true);
-                GameManager.instance.inventoryManager.normalMode=true;
             }
         }
     }
