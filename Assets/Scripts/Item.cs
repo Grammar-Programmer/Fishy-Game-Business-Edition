@@ -9,8 +9,10 @@ public class Item : ScriptableObject{
     [Header("Only gameplay")]
     public TileBase tile;
     public ItemType type;
-    protected IDictionary<String,Double> rarityDictionary=new Dictionary<String,Double>(){{"Commum",0.1},{"Rare",0.3},{"Legendary",0.5}}; 
-    protected String rarity;
+    protected IDictionary<String,Double> rarityDictionary=new Dictionary<String,Double>(){
+        {"Commum",0.1},{"Rare",0.3},{"Expert",0.5},{"Legendary",0.6}
+        }; 
+    public String rarity;
     public Vector2Int range = new Vector2Int(5,4);
     protected RandomVariables randomVariables = new RandomVariables();
     [Header("Only UI")]
