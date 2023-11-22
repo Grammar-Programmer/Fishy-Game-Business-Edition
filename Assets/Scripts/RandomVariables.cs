@@ -49,18 +49,21 @@ public class RandomVariables : MonoBehaviour
         double u = random.NextDouble();
         return xMin + (xMax - xMin) * u;
     }
+    private int uniformDiscrete( int i, int j ){
+        return i + (int)((j - i + 1) * uniform(0, 1));
+    }
     // reset numberOfTries to 0 when fish is catched
     public bool catchAFish(int numberOfTries, double rarity){
         Thread.Sleep(new Random().NextInt(4)*1000);
-        return uniform(1, ObterIntervaloUniforme(rarity)) <= numberOfTries;
+        return uniformDiscrete(1, ObterIntervaloUniforme(rarity)) <= numberOfTries;
     }
     public static int ObterIntervaloUniforme(double rarity){
         double limiteSuperiorBase = 1.0;
         int limiteSuperior = (int)(limiteSuperiorBase * rarity);
         return limiteSuperior;
     }
-    public static double ObterProbRaridade(Double rarity, double p){
-        return rarity*p;
+    public static double getRariryOfBiomePlusRarity(Double rarity, double p){
+        return logistic(-(rarity+p));
     }
     public void test(){
         int bernoulliVariable = bernoulli(0.5);
@@ -73,7 +76,8 @@ public class RandomVariables : MonoBehaviour
             // Estação atual (pode ser ajustada conforme necessário)
 
             double p = probabilityOfBiome(mediaOfBiome, varianceOfBiome);
-            double algo=ObterProbRaridade(0.5,p);
+            // double algo=ObterProbRaridade(0.5,p);
+            double algo=0;
             int binomialRandomVariable = binomial(n, algo);
             if (binomialRandomVariable >= 3){
                 // da return da raridade alta
