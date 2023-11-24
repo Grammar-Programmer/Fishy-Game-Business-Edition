@@ -3,14 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = System.Random;
 
 public class InventoryManager : MonoBehaviour{
     public InventorySlot[] inventorySlot;
     public InventorySlot[] baitInventory;
     public InventorySlot[] traderInventory;
-    public InventorySlot selectedFishingRod;
-    public InventorySlot selectedBait;
+    public FishingRod selectedFishingRod;
+    public Bait selectedBait;
     public Item[] initialItems;
+    public Fish[] commumFishs;
+    public Fish[] rareFishs;
+    public Fish[] legendayFishs;
     public int money;
     public Text moneyText;
     public GameObject inventoryItemPrefab;
@@ -101,7 +105,19 @@ public class InventoryManager : MonoBehaviour{
         inventoryItem.button.name=tag;
         inventoryItem.button.GetComponentInChildren<Text>().text=tag;
     }
-    public void setFishingRod(InventorySlot inventorySlot){
-        selectedFishingRod=inventorySlot;
+    public void setFishingRod(FishingRod fishingRod){
+        selectedFishingRod=fishingRod;
+    }
+    public void setBait(Bait bait){
+        selectedBait=bait;
+    }
+    public Fish getCommumFish(){
+        return commumFishs[new Random().Next(commumFishs.Length)];
+    }
+    public Fish getRareFish(){
+        return rareFishs[new Random().Next(rareFishs.Length)];
+    }
+    public Fish getLegendaryFish(){
+        return legendayFishs[new Random().Next(legendayFishs.Length)];
     }
 }

@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 [CreateAssetMenu(menuName ="Scriptable object/FishingRod")]
 public class FishingRod : Item{
-    public bool getFish(){
-        return true;
+     public bool startFishing(int numberOfTries){
+        return RandomVariables.catchAFish(numberOfTries,rarityDictionary[rarity]);
     }
+   
 }
