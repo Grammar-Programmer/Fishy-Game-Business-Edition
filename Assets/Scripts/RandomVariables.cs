@@ -42,26 +42,26 @@ public class RandomVariables : MonoBehaviour
         double valorNormal = normal(mediaOfBiome, varianceOfBiome);
         return valorNormal;
     }
-    double uniform(double xMin, double xMax){
+    static double uniform(double xMin, double xMax){
         Random random = new Random();
         double u = random.NextDouble();
         return xMin + (xMax - xMin) * u;
     }
     // reset numberOfTries to 0 when fish is catched
-    static double waitingTime(double rarityCana)
+    static int waitingTime(double rarityCana)
     {
        // o jogador vai esperar em meida 10000 ms * a raridade da cada 
         double mu = 10000 * (1-rarityCana);
-        return NormalRandomVariable(mu, 1000);
+        return (int)(normal(mu, 1000));
     } 
 
-    public bool catchAFish(int numberOfTries, double rarityCana){
+    public static bool catchAFish(int numberOfTries, double rarityCana){
         Thread.Sleep(waitingTime(rarityCana));
         return uniform(1, ObterIntervaloUniforme(rarityCana)) <= numberOfTries;
     }
-    public static int ObterIntervaloUniforme(double rarityCana,double successGame){ // invés de receber a raidade recebe um valor do mini game1
+    public static int ObterIntervaloUniforme(double rarityCana){ // invés de receber a raidade recebe um valor do mini game1
         double limiteSuperiorBase = 1.0;
-        int limiteSuperior = (int)((limiteSuperiorBase * (rarityCana + successGame)));
+        int limiteSuperior = (int)((limiteSuperiorBase * (rarityCana )));
         return limiteSuperior;
     }
     public static double ObterProbRaridade(double p, double isca){
@@ -70,26 +70,24 @@ public class RandomVariables : MonoBehaviour
 
 
     public static int catchAFishByRarity( double isca){
-        
-
-        int binomialRandomVariable = binomial(n, insca );
+        int n = 5;
+        int binomialRandomVariable = binomial(n, isca );
          if (binomialRandomVariable >    2){
                 // da return da raridade alta
                 // return nivel 5
         
-                return 5
+                return 5;
                 
-            }
-            if (binomialRandomVariable == 2){
+            }else if (binomialRandomVariable == 2){
                 // da return da raridade media
                 // retorna nivel 3
-                return 3
-            }
-            if (binomialRandomVariable < 2){
+                return 3;
+            }else if (binomialRandomVariable < 2){
                 // da return da raridade baixa
                 // retorna nivel 1
-                return 1
+                return 1; 
             }
+            return 3;
 
     }
 

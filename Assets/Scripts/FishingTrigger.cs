@@ -13,7 +13,7 @@ public class FishingTrigger : MonoBehaviour
     public GameObject traderInventory;
     public GameObject activeSlots;
     private int numberOfTries = 0;
-    private double mediaOfBiome = 0.8;
+    private double mediaOfBiome = 5;
     private double varianceOfBiome = 0.2;
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -37,10 +37,29 @@ public class FishingTrigger : MonoBehaviour
                 if (fishingRod.startFishing(numberOfTries))
                 {
                     SelectMiniGame selectMiniGame = catchMinigame.GetComponent<SelectMiniGame>();
+                    // passar o level pro jogo
+                    int level = RandomVariables.catchAFishByRarity(0.5);
+
+                    // de alguma forma passar essa raidade como level desse mini game 
                     selectMiniGame.StartSelectMinigame();
-                    if(selectMiniGame.getHasWon()){
-                        //Ganhou 
-                    }else{
+                    if (selectMiniGame.getHasWon())
+                    {
+                        //Ganhou
+                        if (level == 5)
+                        {
+                            //ir na lista dos peixes muito raros e ir buscar um peixe raro
+                         }
+                        if (level == 3)
+                        {
+                            //ir na lista dos peixes de raridade mediuns e ir buscar um peixe mediuns
+                       }
+                        if (level == 1)
+                        {
+                            //ir na lista dos peixes de raridade baixa e ir buscar um peixe baixa
+                       }
+                    }
+                    else
+                    {
                         //Nao ganhou
                     }
 
