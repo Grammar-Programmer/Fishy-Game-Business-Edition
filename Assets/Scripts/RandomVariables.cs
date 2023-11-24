@@ -63,7 +63,7 @@ public class RandomVariables : MonoBehaviour
     // reset numberOfTries to 0 when fish is catched
     bool catchAFish(int numberOfTries)
     {
-        Thread.Sleep(new Random().NextInt(4) * 1000);
+        Thread.Sleep(Random.Range(1,4) * 1000);
         return uniform(1, 10) <= numberOfTries;
     }
     public void test()
