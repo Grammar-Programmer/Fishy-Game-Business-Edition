@@ -13,7 +13,6 @@ public class FloatingTextManager : MonoBehaviour{
     }
     public void Show(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration,Boolean forever){
         FloatingText floatingText=GetFloatingText();
-        // print(floatingText);
         floatingText.txt.text=msg;
         floatingText.txt.fontSize=fontSize;
         floatingText.txt.color=color;

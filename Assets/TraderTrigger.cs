@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Trigger : MonoBehaviour{
+public class TraderTrigger : MonoBehaviour{
     public GameObject playerInventory;
     public GameObject traderInventory;
     public GameObject activeSlots;
