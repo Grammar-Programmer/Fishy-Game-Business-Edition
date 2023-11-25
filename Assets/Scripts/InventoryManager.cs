@@ -29,7 +29,7 @@ public class InventoryManager : MonoBehaviour{
         foreach(InventorySlot inventorySlot in traderInventory){
             inventoryItem=inventorySlot.GetComponentInChildren<InventoryItem>();
             if(inventoryItem!=null){
-                print("ola");
+               
                 items.AddLast(inventoryItem.item);
                 Destroy(inventoryItem.gameObject);
             }

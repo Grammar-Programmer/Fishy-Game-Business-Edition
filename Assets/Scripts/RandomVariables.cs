@@ -13,7 +13,8 @@ public class RandomVariables : MonoBehaviour
         return (u < p) ? 1 : 0;
     }
 
-    static double logistic(double x){
+    static double logistic(double x)
+    {
         return 1.0 / (1.0 + Math.Exp(-x));
     }
     public static int binomial(int n, double p){
@@ -59,7 +60,14 @@ public class RandomVariables : MonoBehaviour
     public static double ObterProbRaridade(Double rarity, double p){
         return rarity*p;
     }
-    public void test(){
+    // reset numberOfTries to 0 when fish is catched
+    bool catchAFish(int numberOfTries)
+    {
+        Thread.Sleep(Random.Range(1,4) * 1000);
+        return uniform(1, 10) <= numberOfTries;
+    }
+    public void test()
+    {
         int bernoulliVariable = bernoulli(0.5);
         if (bernoulliVariable == 1){
             // vou assumir que temos 3 raridades diferentes 

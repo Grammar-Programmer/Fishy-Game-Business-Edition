@@ -47,18 +47,15 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         }
     }
     public void OnPointerEnter(PointerEventData eventData){
-        print("OnPointerEnter");
         if(!GameManager.instance.inventoryManager.normalMode)
         if(button.name.Split()[0].Equals("Sell") && item.type.Equals(Item.ItemType.Fish)) button.gameObject.SetActive(true);
         else if(button.name.Split()[0].Equals("Buy")) button.gameObject.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData){
-        print("OnPointerExit");
         if(!GameManager.instance.inventoryManager.normalMode) button.gameObject.SetActive(false);
     }
     void OnMouseDown() {
-        print("OnMouseDown");
         if(canBeDestroyed) Destroy(this.gameObject);
     }
     // private void Update() {

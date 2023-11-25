@@ -13,8 +13,7 @@ public class FishingTrigger : MonoBehaviour
     public GameObject traderInventory;
     public GameObject activeSlots;
     private int numberOfTries = 0;
-    private double mediaOfBiome = 0.8;
-    private double varianceOfBiome = 0.2;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) GameManager.instance.ShowText("Press E to Start Fishing", 15, Color.yellow, transform.position, Vector3.up, 0, true);
@@ -40,6 +39,7 @@ public class FishingTrigger : MonoBehaviour
                     selectMiniGame.StartSelectMinigame();
                     if(selectMiniGame.getHasWon()){
                         //Ganhou 
+                        // GameManager.instance.inventoryManager.addItem(GameManager.instance.inventoryManager.getCommumFish())
                     }else{
                         //Nao ganhou
                     }
@@ -48,7 +48,6 @@ public class FishingTrigger : MonoBehaviour
                 else numberOfTries++;
             }
         }
-        else if (other.CompareTag("Player") && !traderInventory.activeSelf) GameManager.instance.ShowText("Press E to Start Fishing", 15, Color.yellow, transform.position, Vector3.up, 0, true);
     }
     private void OnTriggerExit2D(Collider2D other)
     {

@@ -23,7 +23,7 @@ public class PowerMinigame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.S)) StartPowerUp();
+        // if (Input.GetKey(KeyCode.S)) StartPowerUp();
         if (Input.GetKey(KeyCode.M)) EndPowerUp();
         if (isPowering)
         {

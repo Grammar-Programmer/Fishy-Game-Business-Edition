@@ -38,14 +38,12 @@ public class GameManager : MonoBehaviour{
     }
     //Save state
     public void SaveState(){
-        print("SaveState");
         string s= "";
         s +="0"+"|";
         s +="0";
         PlayerPrefs.SetString("SaveState",s);
     }
     public void LoadState(Scene s, LoadSceneMode mode){
-        print("LoadState");
         SceneManager.sceneLoaded -=LoadState;
         if(!PlayerPrefs.HasKey("SaveState")) return;
         string[] data =PlayerPrefs.GetString("SaveState").Split('|');
