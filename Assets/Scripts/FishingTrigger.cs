@@ -13,8 +13,12 @@ public class FishingTrigger : MonoBehaviour
     public GameObject traderInventory;
     public GameObject activeSlots;
     private int numberOfTries = 0;
+<<<<<<< HEAD
     private double mediaOfBiome = 5;
     private double varianceOfBiome = 0.2;
+=======
+
+>>>>>>> origin
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) GameManager.instance.ShowText("Press E to Start Fishing", 15, Color.yellow, transform.position, Vector3.up, 0, true);
@@ -48,26 +52,27 @@ public class FishingTrigger : MonoBehaviour
                         if (level == 5)
                         {
                             //ir na lista dos peixes muito raros e ir buscar um peixe raro
+                             // GameManager.instance.inventoryManager.addItem(GameManager.instance.inventoryManager.getCommumFish())
                          }
                         if (level == 3)
                         {
                             //ir na lista dos peixes de raridade mediuns e ir buscar um peixe mediuns
+                             // GameManager.instance.inventoryManager.addItem(GameManager.instance.inventoryManager.getCommumFish())
                        }
                         if (level == 1)
                         {
                             //ir na lista dos peixes de raridade baixa e ir buscar um peixe baixa
+                             // GameManager.instance.inventoryManager.addItem(GameManager.instance.inventoryManager.getCommumFish())
                        }
                     }
                     else
                     {
-                        //Nao ganhou
-                    }
+                   // não ganhou
 
                 }
                 else numberOfTries++;
             }
         }
-        else if (other.CompareTag("Player") && !traderInventory.activeSelf) GameManager.instance.ShowText("Press E to Start Fishing", 15, Color.yellow, transform.position, Vector3.up, 0, true);
     }
     private void OnTriggerExit2D(Collider2D other)
     {

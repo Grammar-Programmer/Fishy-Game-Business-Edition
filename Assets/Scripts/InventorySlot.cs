@@ -15,6 +15,6 @@ public class InventorySlot : MonoBehaviour, IDropHandler{
         }
     }
     void OnMouseDown() {
-        print("OnMouseDown");
+        // print("OnMouseDown");
     }
 }
