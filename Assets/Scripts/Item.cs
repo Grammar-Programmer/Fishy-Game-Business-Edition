@@ -9,7 +9,7 @@ public class Item : ScriptableObject{
     [Header("Only gameplay")]
     public ItemType type;
     protected IDictionary<String,Double> rarityDictionary=new Dictionary<String,Double>(){
-        {"Commum",0.1},{"Rare",0.3},{"Expert",0.5},{"Legendary",0.6}
+        {"Commum",0.2},{"Rare",0.3},{"Expert",0.5},{"Legendary",0.6}
         }; 
     public String rarity;
     [Header("Only UI")]

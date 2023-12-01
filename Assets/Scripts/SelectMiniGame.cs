@@ -111,4 +111,5 @@ public class SelectMiniGame : MonoBehaviour
         else{Debug.Log("Try again!");}
         
     }
+
 }
