@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 0}
   type: 2
-  actionType: 1
+  rarity: Legendary
   range: {x: 5, y: 4}
   stacktable: 1
   image: {fileID: 21300000, guid: 3df32daac35a01048a729847562d92fa, type: 3}

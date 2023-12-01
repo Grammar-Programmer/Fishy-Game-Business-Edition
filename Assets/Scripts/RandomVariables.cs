@@ -1,94 +1,84 @@
 using System;
 using System.Threading;
 using UnityEngine;
-using Random = Unity.Mathematics.Random;
-
+using Random = System.Random;
 public class RandomVariables : MonoBehaviour
 {
-
+    // Discretas
     public static int bernoulli(double p)
     {
-        Random random = new Random();
-        double u = random.NextDouble();
+        double u = new Random().NextDouble();
         return (u < p) ? 1 : 0;
     }
 
-    static double logistic(double x){
-        return 1.0 / (1.0 + Math.Exp(-x));
-    }
-    public static int binomial(int n, double p){
-        Random random = new Random();
+    public static int binomial(int n, double p)
+    {
         int successes = 0;
-        for (int i = 0; i < n; i++){
-            if (random.NextDouble() < p)
-                successes++;
-        }
+        for (int i = 0; i < n; i++)
+            successes += bernoulli(p);
+
         return successes;
     }
-    static double normal(double mu, double sigma){
-        Random random = new Random();
-        double u1 = 1.0 - random.NextDouble();
-        double u2 = 1.0 - random.NextDouble();
-        double standardNormal = Math.Sqrt(-2.0 * Math.Log(u1)) * Math.Cos(2.0 * Math.PI * u2);
-        return mu + sigma * standardNormal;
+
+    public static int uniformDiscrete(int min, int max)
+    {
+        return min + (int)((max - min + 1) * uniform(0, 1));
+    }
+
+    // Contínuas
+    public static double uniform(double xMin, double xMax)
+    {
+        double u = new Random().NextDouble();
+        return xMin + (xMax - xMin) * u;
+    }
+
+    public static double normal(double mu, double sigma)
+    {
+        double p, p1, p2;
+        do
+        {
+            p1 = uniform(-1, 1);
+            p2 = uniform(-1, 1);
+            p = p1 * p1 + p2 * p2;
+        } while (p >= 1);
+
+        return mu + sigma * p1 * Math.Sqrt(-2 * Math.Log(p) / p);
     }
     static double exponential(double lambda)
     {
-        Random random = new Random();
-        double u = random.NextDouble();
-        return -Math.Log(1.0 - u) / lambda;
+        double u = new Random().NextDouble();
+        return -Math.Log(u) * lambda;
     }
-    public static double probabilityOfBiome(double mediaOfBiome, double varianceOfBiome){
-        // Geração de variável aleatória normal
-        double valorNormal = normal(mediaOfBiome, varianceOfBiome);
-        // Aplicação da função logística para transformar em probabilidade
-        return logistic(valorNormal);
-    }
-    double uniform(double xMin, double xMax){
-        Random random = new Random();
-        double u = random.NextDouble();
-        return xMin + (xMax - xMin) * u;
-    }
-    private int uniformDiscrete( int i, int j ){
-        return i + (int)((j - i + 1) * uniform(0, 1));
-    }
+
+    // Functions
     // reset numberOfTries to 0 when fish is catched
-    public bool catchAFish(int numberOfTries, double rarity){
-        Thread.Sleep(new Random().NextInt(4)*1000);
-        return uniformDiscrete(1, ObterIntervaloUniforme(rarity)) <= numberOfTries;
+    public static int waitingTime(double rarityCana)
+    {
+        // o jogador vai esperar em meida 10000 ms * a raridade da cada 
+        double mu = 10000 * (1 - rarityCana);
+        return (int)(normal(mu, 1000));
     }
-    public static int ObterIntervaloUniforme(double rarity){
-        double limiteSuperiorBase = 1.0;
-        int limiteSuperior = (int)(limiteSuperiorBase * rarity);
+
+    public static bool catchAFish(int numberOfTries, double mingameScore)
+    {
+        return uniformDiscrete(1, ObterIntervaloUniforme(mingameScore)) <= numberOfTries;
+    }
+    public static int ObterIntervaloUniforme(double rarityCana)
+    { // invés de receber a raidade recebe um valor do mini game1
+        double limiteSuperiorBase = 10;
+        int limiteSuperior = (int)((limiteSuperiorBase * (rarityCana)));
         return limiteSuperior;
     }
-    public static double getRariryOfBiomePlusRarity(Double rarity, double p){
-        return logistic(-(rarity+p));
-    }
-    public void test(){
-        int bernoulliVariable = bernoulli(0.5);
-        if (bernoulliVariable == 1){
-            // vou assumir que temos 3 raridades diferentes 
-            int n = 5;
-            // Parâmetros da distribuição normal para cada estação
-            double mediaOfBiome = 0.8;
-            double varianceOfBiome = 0.2;
-            // Estação atual (pode ser ajustada conforme necessário)
 
-            double p = probabilityOfBiome(mediaOfBiome, varianceOfBiome);
-            // double algo=ObterProbRaridade(0.5,p);
-            double algo=0;
-            int binomialRandomVariable = binomial(n, algo);
-            if (binomialRandomVariable >= 3){
-                // da return da raridade alta
-            }
-            if (binomialRandomVariable == 2){
-                // da return da raridade media
-            }
-            if (binomialRandomVariable < 2){
-                // da return da raridade baixa
-            }
-        }
-        else print("não apanhou nenhum peixe");
+    public static Level catchAFishByRarity(double isca)
+    {
+        int binomialRandomVariable = binomial(5, isca);
+        return LevelMethods.getLevel(binomialRandomVariable);
+    }
+
+
+
+    public void test()
+    {
     }
 }

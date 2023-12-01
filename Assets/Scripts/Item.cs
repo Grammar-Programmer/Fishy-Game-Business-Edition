@@ -7,12 +7,11 @@ using UnityEngine.Tilemaps;
 [CreateAssetMenu(menuName ="Scriptable object/Item")]
 public class Item : ScriptableObject{
     [Header("Only gameplay")]
-    public TileBase tile;
     public ItemType type;
-    protected IDictionary<String,Double> rarityDictionary=new Dictionary<String,Double>(){{"Commum",0.1},{"Rare",0.3},{"Legendary",0.5}}; 
-    protected String rarity;
-    public Vector2Int range = new Vector2Int(5,4);
-    protected RandomVariables randomVariables = new RandomVariables();
+    protected IDictionary<String,Double> rarityDictionary=new Dictionary<String,Double>(){
+        {"Commum",0.2},{"Rare",0.3},{"Expert",0.5},{"Legendary",0.6}
+        }; 
+    public String rarity;
     [Header("Only UI")]
     public bool stacktable= true;
     [Header("Both")]
