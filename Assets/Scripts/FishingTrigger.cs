@@ -19,13 +19,13 @@ public class FishingTrigger : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && Input.GetKey(KeyCode.E)) minigame();
-    }
-
-    private void minigame()
-    {
         FishingRod fishingRod = GameManager.instance.inventoryManager.selectedFishingRod;
         Bait bait = GameManager.instance.inventoryManager.selectedBait;
+
+
+        if (!(other.CompareTag("Player") && Input.GetKey(KeyCode.E)))
+            return;
+
         playerInventory.SetActive(false);
         GameManager.instance.floatingTextManager.GetFloatingText().Hide();
 
@@ -38,30 +38,29 @@ public class FishingTrigger : MonoBehaviour
         PowerMinigame powerGame = powerMinigame.GetComponent<PowerMinigame>();
         SelectMiniGame selectMiniGame = catchMinigame.GetComponent<SelectMiniGame>();
         Level level;
-        while (true)
+
+        powerGame.StartPowerUp();
+        if (!fishingRod.startFishing(numberOfTries, powerGame.result))
         {
-            print("T");
-            powerGame.StartPowerUp();
-            if (!fishingRod.startFishing(numberOfTries, powerGame.result))
-            {
-                numberOfTries++;
-                continue;
-            }
-
-            numberOfTries = 0;
-            level = bait.useBait();
-
-            selectMiniGame.StartSelectMinigame();
-            selectMiniGame.SetDifficulty((int)level);
-            
-            if (selectMiniGame.getHasWon())
-            {
-                LevelMethods.GetFishRarity(level);
-                return;
-            }
+            numberOfTries++;
+            return;
         }
-    }
 
+        numberOfTries = 0;
+        level = bait != null ? bait.useBait() : RandomVariables.catchAFishByRarity(0.1);
+
+        selectMiniGame.StartSelectMinigame();
+        selectMiniGame.SetDifficulty((int)level);
+
+        if (selectMiniGame.getHasWon())
+        {
+            playerInventory.SetActive(true);
+            GameManager.instance.inventoryManager.addItem(LevelMethods.GetFishRarity(level));
+            return;
+        }
+
+
+    }
     private void OnTriggerExit2D(Collider2D other)
     {
         powerMinigame.GetComponent<PowerMinigame>().EndPowerUp();
