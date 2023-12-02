@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour{
     public InventorySlot[] baitInventory;
     public InventorySlot[] traderInventory;
     public FishingRod selectedFishingRod;
+    public InventorySelectedBaitSlot inventorySelectedBaitSlot;
     public Bait selectedBait;
     public Item[] initialItems;
     public Fish[] commumFishs;
@@ -89,7 +90,8 @@ public class InventoryManager : MonoBehaviour{
         }
     }
     public void sell(Item item, InventorySlot[] inventory){
-        GameManager.instance.setMoney(item.price);
+        GameManager.instance.setMoney(item.nextPrice);
+        item.nextPrice=RandomVariables.finalPrice(item.nextPrice,1);
         removeToSelectedInventory(item,inventory);    
     }
     public void buy(Item item, InventorySlot[] inventory){
