@@ -48,7 +48,10 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     }
     public void OnPointerEnter(PointerEventData eventData){
         if(!GameManager.instance.inventoryManager.normalMode)
-        if(button.name.Split()[0].Equals("Sell") && item.type.Equals(Item.ItemType.Fish)) button.gameObject.SetActive(true);
+        if(button.name.Split()[0].Equals("Sell") && item.type.Equals(Item.ItemType.Fish)){
+            button.GetComponentInChildren<Text>().text=item.nextPrice.ToString();
+            button.gameObject.SetActive(true);
+        } 
         else if(button.name.Split()[0].Equals("Buy")) button.gameObject.SetActive(true);
     }
 

@@ -1,5 +1,6 @@
 using System;
 using System.Threading;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using Random = System.Random;
 public class RandomVariables : MonoBehaviour
@@ -49,6 +50,9 @@ public class RandomVariables : MonoBehaviour
         double u = new Random().NextDouble();
         return -Math.Log(u) * lambda;
     }
+    public static int finalPrice(int price, double lambda){
+        return (int)(price*exponential(lambda));
+    }
 
     // Functions
     // reset numberOfTries to 0 when fish is catched
@@ -56,7 +60,8 @@ public class RandomVariables : MonoBehaviour
     {
         // o jogador vai esperar em meida 10000 ms * a raridade da cada 
         double mu = 10000 * (1 - rarityCana);
-        return (int)(normal(mu, 1000));
+        return 1;
+        // return (int)(normal(mu, 1000));
     }
 
     public static bool catchAFish(int numberOfTries, double mingameScore)
@@ -75,8 +80,6 @@ public class RandomVariables : MonoBehaviour
         int binomialRandomVariable = binomial(5, isca);
         return LevelMethods.getLevel(binomialRandomVariable);
     }
-
-
 
     public void test()
     {
