@@ -6,7 +6,7 @@
 
     static class LevelMethods
 {
-    static Level[] levels = {Level.Easy, Level.Easy, Level.Medium, Level.Hard, Level.Hard, Level.Hard};
+    static Level[] levels = {Level.Easy, Level.Medium, Level.Hard};
 
     public static Fish GetFishRarity(this Level s1)
     {

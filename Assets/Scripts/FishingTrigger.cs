@@ -12,7 +12,7 @@ public class FishingTrigger : MonoBehaviour
     public GameObject playerInventory;
     public GameObject traderInventory;
     public GameObject activeSlots;
-    private int numberOfTries = 1;
+    private int numberOfTries = 0;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) GameManager.instance.ShowText("Press E to Start Fishing", 15, Color.yellow, transform.position, Vector3.up, 0, true);
@@ -40,6 +40,10 @@ public class FishingTrigger : MonoBehaviour
         Level level;
 
         powerGame.StartPowerUp();
+
+        while (powerGame.isRunning())
+            ;
+
         if (!fishingRod.startFishing(numberOfTries, powerGame.result))
         {
             numberOfTries++;

@@ -1,4 +1,7 @@
 using System;
+using System.IO;
+using System.Reflection;
+using System.Text;
 using System.Threading;
 using UnityEngine;
 using Random = System.Random;
@@ -61,24 +64,49 @@ public class RandomVariables : MonoBehaviour
 
     public static bool catchAFish(int numberOfTries, double mingameScore)
     {
-        return uniformDiscrete(1, ObterIntervaloUniforme(mingameScore)) <= numberOfTries;
+        return uniformDiscrete(0, ObterIntervaloUniforme(mingameScore)) <= numberOfTries;
     }
-    public static int ObterIntervaloUniforme(double rarityCana)
-    { // invés de receber a raidade recebe um valor do mini game1
-        double limiteSuperiorBase = 10;
-        int limiteSuperior = (int)((limiteSuperiorBase * (rarityCana)));
-        return limiteSuperior;
+
+    // result => [0, 20]
+    public static int ObterIntervaloUniforme(double mingameScore)
+    {
+        double proportion = 0.2;
+        return 20 - (int)(mingameScore * proportion);
     }
 
     public static Level catchAFishByRarity(double isca)
     {
-        int binomialRandomVariable = binomial(5, isca);
+        int binomialRandomVariable = binomial(2, isca);
         return LevelMethods.getLevel(binomialRandomVariable);
     }
 
-
-
-    public void test()
+    public static void saveFile()
     {
+        Int64 x;
+        try
+        {
+            //Open the File
+            StreamWriter sw = new StreamWriter("C:\\Users\\alexm\\Desktop\\Worksplace\\Unity\\Fishy-Game-Business-Edition\\Assets\\Results.txt", false, Encoding.ASCII);
+
+            // Variables
+            // double isca = 0.8;
+            double minigameScore = 0.0;
+
+            for (x = 0; x < 100000; x++)
+            {
+                sw.WriteLine(uniformDiscrete(0, ObterIntervaloUniforme(minigameScore)));
+            }
+
+            //close the file
+            sw.Close();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("Exception: " + e.Message);
+        }
+        finally
+        {
+            Console.WriteLine("Executing finally block.");
+        }
     }
 }

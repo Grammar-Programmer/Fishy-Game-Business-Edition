@@ -82,4 +82,8 @@ public class PowerMinigame : MonoBehaviour
         isPowering = false;
         canvas.SetActive(false);
     }
+
+    public bool isRunning(){
+        return isPowering;
+    }
 }
