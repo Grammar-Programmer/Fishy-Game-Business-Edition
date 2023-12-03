@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e1d19ac7a2d1bf4f8ad883398782987, type: 3}
   m_Name: FishingRod_Rare
   m_EditorClassIdentifier: 
-  tile: {fileID: 0}
   type: 1
   rarity: Rare
-  range: {x: 5, y: 4}
   stacktable: 1
   image: {fileID: 21300000, guid: c4ca74cb53bae454c85574feed6930a4, type: 2}
-  price: 500
+  price: 2000
+  nextPrice: 2000

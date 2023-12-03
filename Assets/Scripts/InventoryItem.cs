@@ -13,6 +13,10 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     [HideInInspector] public Transform parentAfterDrag;
     public bool canBeDestroyed=false;
     public Button button;
+    // public override string ToString()
+    // {
+    //     return $"\"image\": {image}, \"countText\": {countText}, \"item\": {item}, \"count\": {count}, \"parentAfterDrag\": {parentAfterDrag}, \"canBeDestroyed\": {canBeDestroyed}, \"button\": {button}";
+    // }
     private void Start(){
         InitialiseItem(item);
     }
@@ -47,16 +51,22 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         }
     }
     public void OnPointerEnter(PointerEventData eventData){
-        if(!GameManager.instance.inventoryManager.normalMode)
-        if(button.name.Split()[0].Equals("Sell") && item.type.Equals(Item.ItemType.Fish)){
-            button.GetComponentInChildren<Text>().text=item.nextPrice.ToString();
-            button.gameObject.SetActive(true);
-        } 
-        else if(button.name.Split()[0].Equals("Buy")) button.gameObject.SetActive(true);
+        if(!GameManager.instance.inventoryManager.normalMode){
+            var tempColor = image.color;
+                tempColor.a = 0.5f;
+                image.color = tempColor;
+            if(button.name.Split()[0].Equals("Sell") && item.type.Equals(Item.ItemType.Fish)){
+                button.GetComponentInChildren<Text>().text=item.nextPrice.ToString();
+                button.gameObject.SetActive(true);
+            }else if(button.name.Split()[0].Equals("Buy")) button.gameObject.SetActive(true);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData){
         if(!GameManager.instance.inventoryManager.normalMode) button.gameObject.SetActive(false);
+        var tempColor = image.color;
+        tempColor.a = 1f;
+        image.color = tempColor;
     }
     void OnMouseDown() {
         if(canBeDestroyed) Destroy(this.gameObject);
