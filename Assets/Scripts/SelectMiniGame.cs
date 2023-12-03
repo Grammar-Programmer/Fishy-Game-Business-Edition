@@ -76,6 +76,6 @@ public class SelectMiniGame : MonoBehaviour
     void CheckSuccess(){   
         hasWon = Mathf.Abs(fishingRod.localPosition.x - blueRectangle.transform.localPosition.x) < goalWidths[difficulty] / 2;
         canvas.SetActive(false);
-        if (hasWon)fishingTrigger.selectMiniGameOver=true;
+        fishingTrigger.selectMiniGameOver=true;
     }
 }

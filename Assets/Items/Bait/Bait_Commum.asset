@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Bait_Commum
   m_EditorClassIdentifier: 
   type: 0
-  rarity: 
+  rarity: Commum
   stacktable: 1
-  image: {fileID: 0}
-  price: 0
+  image: {fileID: -1666563722, guid: 87c74d4bc24fdb14f9e56312a9c2bde6, type: 3}
+  price: 15
+  nextPrice: 15

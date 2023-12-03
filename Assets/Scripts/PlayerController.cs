@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, DataPeristence
 {
 
     // Adjust position of Player, because it fixing the pivots in sprite wasn't working
@@ -47,5 +47,15 @@ public class PlayerController : MonoBehaviour
 
         // Make adjustment to fix animations
         transform.localPosition = new Vector3(transform.localPosition.x + adjust, transform.localPosition.y, 0);
+    }
+
+    public void loadData(GameData data)
+    {
+        transform.position=data.playerPosition;
+    }
+
+    public void saveData(ref GameData data)
+    {
+        data.playerPosition=transform.position;
     }
 }

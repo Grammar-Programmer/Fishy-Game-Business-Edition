@@ -78,6 +78,17 @@ public class InventoryManager : MonoBehaviour{
             }
         }
     }
+    public List<InventoryItem> GetInventoryItems(){
+        List<InventoryItem> inventoryItems= new List<InventoryItem>();
+            for (int i = 0; i < inventorySlot.Length; i++){
+                InventorySlot slot= inventorySlot[i];
+                InventoryItem itemInSlot =slot.GetComponentInChildren<InventoryItem>();
+            if(itemInSlot != null ){
+                inventoryItems.Add(itemInSlot);
+            }
+        }
+        return inventoryItems;
+    }
     public void removeToSelectedInventory(Item item, InventorySlot[] inventory){
          for (int i = 0; i < inventory.Length; i++){
             InventorySlot slot= inventory[i];

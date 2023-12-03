@@ -7,7 +7,7 @@ public class Portal
     {
         if (coll.name == "Player")
         {
-            GameManager.instance.SaveState();
+            // GameManager.instance.SaveState();
             string sceneName = sceneNames[0];
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
         }
