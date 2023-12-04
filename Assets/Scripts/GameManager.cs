@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour{
+public class GameManager : MonoBehaviour, DataPeristence{
     public static GameManager instance;
     private void Awake(){
         if(GameManager.instance !=null){
@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour{
             return;
         }
         instance=this;
-        SceneManager.sceneLoaded +=LoadState;
+        // SceneManager.sceneLoaded +=LoadState;
         DontDestroyOnLoad(gameObject);
     }
     //Resources
@@ -37,16 +37,39 @@ public class GameManager : MonoBehaviour{
         floatingTextManager.Show(msg,fontSize,color,position,motion,duration,forever);
     }
     //Save state
-    public void SaveState(){
-        string s= "";
-        s +="0"+"|";
-        s +="0";
-        PlayerPrefs.SetString("SaveState",s);
-    }
-    public void LoadState(Scene s, LoadSceneMode mode){
-        SceneManager.sceneLoaded -=LoadState;
-        if(!PlayerPrefs.HasKey("SaveState")) return;
-        string[] data =PlayerPrefs.GetString("SaveState").Split('|');
+    // public void SaveState(){
+    //     string s= "";
+    //     s +="0"+"|";
+    //     s +="0";
+    //     PlayerPrefs.SetString("SaveState",s);
+    // }
+    // public void LoadState(Scene s, LoadSceneMode mode){
+    //     SceneManager.sceneLoaded -=LoadState;
+    //     GameData datasave= SystemSave.loadGame();
+    //     if(datasave==null) return;
+    //     inventoryManager=datasave.getInventoryManager();
+    //     money=datasave.getMoney();
+    //     textMoney.text=money.ToString();
+    //     player.transform.position=datasave.getPositionOfPlayer().position;
+    //     // if(!PlayerPrefs.HasKey("SaveState")) return;
+    //     // string[] data =PlayerPrefs.GetString("SaveState").Split('|');
+    // }
+
+    public void loadData(GameData data)
+    {
+        money=data.money;
+        textMoney.text=money.ToString();
+        // if(!data.firstTime) inventoryManager=data.inventoryManager;
+        if(!data.firstTime){
+            foreach(InventoryItem inventoryItem in data.inventoryitem)
+            inventoryManager.addItem(inventoryItem.item);
+        } 
     }
 
+    public void saveData(ref GameData data)
+    {
+        data.money=money;
+        data.inventoryitem=inventoryManager.GetInventoryItems().ToArray();
+        // data.inventoryManager=inventoryManager;
+    }
 }

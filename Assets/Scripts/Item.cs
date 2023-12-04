@@ -17,7 +17,7 @@ public class Item : ScriptableObject{
     [Header("Both")]
     public Sprite image;
     public int price;
-    
+    public int nextPrice;
     public enum ItemType{
         Bait,
         FishRod,

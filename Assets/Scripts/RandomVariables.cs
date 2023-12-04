@@ -3,6 +3,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Threading;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using Random = System.Random;
 public class RandomVariables : MonoBehaviour
@@ -45,6 +46,9 @@ public class RandomVariables : MonoBehaviour
     {
         double u = new Random().NextDouble();
         return -Math.Log(u) * lambda;
+    }
+    public static int finalPrice(int price, double lambda){
+        return (int)(price*exponential(lambda));
     }
 
     // Functions

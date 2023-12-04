@@ -9,7 +9,7 @@ public class TraderTrigger : MonoBehaviour{
     public GameObject traderInventory;
     public GameObject activeSlots;
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Player")) GameManager.instance.ShowText("Press E to trade",15,Color.yellow,transform.position,Vector3.up,0,true); 
+        if(other.CompareTag("Player")) GameManager.instance.ShowText("Press E to trade",20,Color.yellow,transform.position,Vector3.up,0,true); 
     }
     private void OnTriggerStay2D(Collider2D other){
         if(other.CompareTag("Player") && Input.GetKey(KeyCode.E)){
@@ -22,7 +22,7 @@ public class TraderTrigger : MonoBehaviour{
             // playerInventory.transform.Find("CharacterActiveSlots").gameObject.SetActive(false);
             traderInventory.SetActive(true);
             playerInventory.transform.Find("Container").localPosition=new Vector3(-12,-100,0);
-        }else if(other.CompareTag("Player") && !traderInventory.activeSelf) GameManager.instance.ShowText("Press E to trade",15,Color.yellow,transform.position,Vector3.up,0,true);
+        }else if(other.CompareTag("Player") && !traderInventory.activeSelf) GameManager.instance.ShowText("Press E to trade",20,Color.yellow,transform.position,Vector3.up,0,true);
     }
     private void OnTriggerExit2D(Collider2D other) {
         if(other.CompareTag("Player")){

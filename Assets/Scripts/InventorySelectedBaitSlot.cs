@@ -17,4 +17,11 @@ public class InventorySelectedBaitSlot : InventoryBaitSlot{
             GameManager.instance.inventoryManager.setBait((Bait)newInventoryItem.item);
         }
     }
+    public void uptadeCount(){
+        InventoryItem actualInventoryItem=GetComponentInChildren<InventoryItem>();
+        if(actualInventoryItem!=null){
+            if(actualInventoryItem.count--==1) Destroy(actualInventoryItem.gameObject);
+            actualInventoryItem.RefreshCount();
+        }
+    }
 }

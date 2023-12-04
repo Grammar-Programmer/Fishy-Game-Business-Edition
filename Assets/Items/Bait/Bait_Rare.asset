@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 906d8436adead474fa65ac4260153d48, type: 3}
   m_Name: Bait_Rare
   m_EditorClassIdentifier: 
-  tile: {fileID: 0}
   type: 0
   rarity: Rare
-  range: {x: 5, y: 4}
   stacktable: 1
   image: {fileID: 21300000, guid: 155a9d2481a133345ad7c4e98f9d690b, type: 2}
-  price: 100
+  price: 25
+  nextPrice: 25

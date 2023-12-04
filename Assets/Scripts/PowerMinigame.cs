@@ -2,21 +2,19 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.UI;
+using System.Threading;
 
 
-public class PowerMinigame : MonoBehaviour
-{
+public class PowerMinigame : MonoBehaviour{
     [SerializeField]
     private GameObject canvas;
     [SerializeField]
     private Image powerFill;
-
-
+    public FishingTrigger fishingTrigger;
     private float powerAmt = 0;
     private bool isPowering = false;
     private float speed = 100.0f;
     private float accelaration;
-
     public float result; // result from the minigame 0- failure ]0,1[- prop to add
 
 
@@ -24,18 +22,12 @@ public class PowerMinigame : MonoBehaviour
     void Update()
     {
         // if (Input.GetKey(KeyCode.S)) StartPowerUp();
-        if (Input.GetKey(KeyCode.M)) EndPowerUp();
-        if (isPowering)
-        {
-            PowerAction();
-        }
+        // if (Input.GetKey(KeyCode.M)) EndPowerUp();
+        if (isPowering) PowerAction();
     }
 
-    void PowerAction()
-    {
-
-        if (Input.GetKey(KeyCode.P))
-        {
+    void PowerAction(){
+        if (Input.GetKey(KeyCode.Space)){
             powerAmt += speed * Time.deltaTime;
             powerFill.fillAmount = powerAmt / 100;
             powerFill.color = new Color(255,255,255,powerAmt/100 + 0.2f); 
@@ -45,18 +37,19 @@ public class PowerMinigame : MonoBehaviour
                 isPowering = false;
                 result = 0;
                 powerFill.color = Color.red;
+                fishingTrigger.powerMiniGameOver=true;
+                Thread.Sleep(250);
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.P))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             isPowering = false;
             result = powerAmt >= 100f ? 0 : powerAmt;
+            fishingTrigger.powerMiniGameOver=true;
+            Thread.Sleep(250);
         }
     }
-
-
-
     public void StartPowerUp()
     {
         //set default values
@@ -66,7 +59,6 @@ public class PowerMinigame : MonoBehaviour
         powerFill.fillAmount = 0;
         powerFill.color = Color.white;
         speed = 100.0f;
-
         //Uniform distribuiton
         accelaration = (float)RandomVariables.uniform(3,23);
 
@@ -74,15 +66,11 @@ public class PowerMinigame : MonoBehaviour
         canvas.SetActive(true);
         isPowering = true;
     }
-
-
-
     public void EndPowerUp()
     {
         isPowering = false;
         canvas.SetActive(false);
     }
-
     public bool isRunning(){
         return isPowering;
     }

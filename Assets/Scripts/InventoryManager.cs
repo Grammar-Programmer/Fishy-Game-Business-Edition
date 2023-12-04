@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour{
     public InventorySlot[] baitInventory;
     public InventorySlot[] traderInventory;
     public FishingRod selectedFishingRod;
+    public InventorySelectedBaitSlot inventorySelectedBaitSlot;
     public Bait selectedBait;
     public Item[] initialItems;
     public Fish[] commumFishs;
@@ -77,6 +78,17 @@ public class InventoryManager : MonoBehaviour{
             }
         }
     }
+    public List<InventoryItem> GetInventoryItems(){
+        List<InventoryItem> inventoryItems= new List<InventoryItem>();
+            for (int i = 0; i < inventorySlot.Length; i++){
+                InventorySlot slot= inventorySlot[i];
+                InventoryItem itemInSlot =slot.GetComponentInChildren<InventoryItem>();
+            if(itemInSlot != null ){
+                inventoryItems.Add(itemInSlot);
+            }
+        }
+        return inventoryItems;
+    }
     public void removeToSelectedInventory(Item item, InventorySlot[] inventory){
          for (int i = 0; i < inventory.Length; i++){
             InventorySlot slot= inventory[i];
@@ -89,7 +101,8 @@ public class InventoryManager : MonoBehaviour{
         }
     }
     public void sell(Item item, InventorySlot[] inventory){
-        GameManager.instance.setMoney(item.price);
+        GameManager.instance.setMoney(item.nextPrice);
+        item.nextPrice=RandomVariables.finalPrice(item.nextPrice,1);
         removeToSelectedInventory(item,inventory);    
     }
     public void buy(Item item, InventorySlot[] inventory){
