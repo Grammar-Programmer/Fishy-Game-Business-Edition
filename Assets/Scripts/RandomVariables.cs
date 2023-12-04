@@ -35,17 +35,11 @@ public class RandomVariables : MonoBehaviour
         return xMin + (xMax - xMin) * u;
     }
 
-    public static double normal(double mu, double sigma)
+    public static double erlang(double b, int c)
     {
-        double p, p1, p2;
-        do
-        {
-            p1 = uniform(-1, 1);
-            p2 = uniform(-1, 1);
-            p = p1 * p1 + p2 * p2;
-        } while (p >= 1);
-
-        return mu + sigma * p1 * Math.Sqrt(-2 * Math.Log(p) / p);
+        double prod = 1.0;
+        for (int i = 0; i < c; i++) prod *= uniform(0, 1);
+        return -b * Math.Log(prod);
     }
     static double exponential(double lambda)
     {
@@ -55,11 +49,9 @@ public class RandomVariables : MonoBehaviour
 
     // Functions
     // reset numberOfTries to 0 when fish is catched
-    public static int waitingTime(double rarityCana)
+    public static int waitingTime(int c)
     {
-        // o jogador vai esperar em meida 10000 ms * a raridade da cada 
-        double mu = 10000 * (1 - rarityCana);
-        return (int)(normal(mu, 1000));
+        return (int)erlang(1, c) * 1000;
     }
 
     public static bool catchAFish(int numberOfTries, double mingameScore)
@@ -67,11 +59,11 @@ public class RandomVariables : MonoBehaviour
         return uniformDiscrete(0, ObterIntervaloUniforme(mingameScore)) <= numberOfTries;
     }
 
-    // result => [0, 20]
+    // result => [0, 40]
     public static int ObterIntervaloUniforme(double mingameScore)
     {
-        double proportion = 0.2;
-        return 20 - (int)(mingameScore * proportion);
+        double proportion = 0.3;
+        return 40 - (int)(mingameScore * proportion);
     }
 
     public static Level catchAFishByRarity(double isca)
@@ -90,11 +82,12 @@ public class RandomVariables : MonoBehaviour
 
             // Variables
             // double isca = 0.8;
-            double minigameScore = 0.0;
+            // double minigameScore = 50;
+            int c = 0;
 
             for (x = 0; x < 100000; x++)
             {
-                sw.WriteLine(uniformDiscrete(0, ObterIntervaloUniforme(minigameScore)));
+                sw.WriteLine((float)erlang(1, c));
             }
 
             //close the file

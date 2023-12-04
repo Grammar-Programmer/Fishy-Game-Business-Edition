@@ -68,7 +68,7 @@ public class PowerMinigame : MonoBehaviour
         speed = 100.0f;
 
         //Uniform distribuiton
-        accelaration = Random.Range(3f,23f);
+        accelaration = (float)RandomVariables.uniform(3,23);
 
         //start
         canvas.SetActive(true);
