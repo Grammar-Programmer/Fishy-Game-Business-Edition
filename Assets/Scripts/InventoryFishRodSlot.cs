@@ -14,6 +14,7 @@ public class InventoryFishRodSlot : InventorySlot{
             newInventoryItem.count=inventoryItem.count;
             newInventoryItem.canBeDestroyed=true;
             GameManager.instance.inventoryManager.setFishingRod((FishingRod)newInventoryItem.item);
+            GameManager.instance.floatingTextManager.GetFloatingText().Hide();
             // inventoryItem.button.name=tag;
             // inventoryItem.button.GetComponentInChildren<Text>().text=tag;
         }

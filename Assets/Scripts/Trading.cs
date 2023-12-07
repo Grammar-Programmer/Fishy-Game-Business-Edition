@@ -25,6 +25,6 @@ public class Trading : MonoBehaviour{
         String action=button.name.Split()[0];
         Item item=inventoryItem.item;
         if(action.Equals("Buy"))inventoryManager.buy(item,inventoryManager.traderInventory);
-        else inventoryManager.sell(item,inventoryManager.inventorySlot);
+        else inventoryManager.sell(inventoryItem,inventoryManager.inventorySlot);
     }
 }

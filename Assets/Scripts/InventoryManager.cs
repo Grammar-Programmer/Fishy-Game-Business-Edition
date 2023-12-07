@@ -100,10 +100,11 @@ public class InventoryManager : MonoBehaviour{
             }
         }
     }
-    public void sell(Item item, InventorySlot[] inventory){
-        GameManager.instance.setMoney(item.nextPrice);
-        item.nextPrice=RandomVariables.finalPrice(item.nextPrice,1);
-        removeToSelectedInventory(item,inventory);    
+    public void sell(InventoryItem inventoryItem, InventorySlot[] inventory){
+        GameManager.instance.setMoney(inventoryItem.item.nextPrice);
+        inventoryItem.item.nextPrice=RandomVariables.finalPrice(inventoryItem.item.price);
+        removeToSelectedInventory(inventoryItem.item,inventory);
+        inventoryItem.button.GetComponentInChildren<Text>().text=inventoryItem.item.nextPrice.ToString(); 
     }
     public void buy(Item item, InventorySlot[] inventory){
         if( GameManager.instance.money-item.price<0) return;

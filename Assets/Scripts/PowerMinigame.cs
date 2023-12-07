@@ -5,7 +5,8 @@ using UnityEngine.UI;
 using System.Threading;
 
 
-public class PowerMinigame : MonoBehaviour{
+public class PowerMinigame : MonoBehaviour
+{
     [SerializeField]
     private GameObject canvas;
     [SerializeField]
@@ -26,19 +27,20 @@ public class PowerMinigame : MonoBehaviour{
         if (isPowering) PowerAction();
     }
 
-    void PowerAction(){
-        if (Input.GetKey(KeyCode.Space)){
+    void PowerAction()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
             powerAmt += speed * Time.deltaTime;
             powerFill.fillAmount = powerAmt / 100;
-            powerFill.color = new Color(255,255,255,powerAmt/100 + 0.2f); 
+            powerFill.color = new Color(255, 255, 255, powerAmt / 100 + 0.2f);
             speed += accelaration;
             if (powerAmt >= 100f)
             {
                 isPowering = false;
                 result = 0;
                 powerFill.color = Color.red;
-                fishingTrigger.powerMiniGameOver=true;
-                Thread.Sleep(250);
+                fishingTrigger.powerMiniGameOver = true;
             }
         }
 
@@ -46,21 +48,20 @@ public class PowerMinigame : MonoBehaviour{
         {
             isPowering = false;
             result = powerAmt >= 100f ? 0 : powerAmt;
-            fishingTrigger.powerMiniGameOver=true;
-            Thread.Sleep(250);
+            fishingTrigger.powerMiniGameOver = true;
         }
     }
     public void StartPowerUp()
     {
         //set default values
 
-        Debug.Log("teste1");
         powerAmt = 0f;
         powerFill.fillAmount = 0;
         powerFill.color = Color.white;
         speed = 100.0f;
         //Uniform distribuiton
-        accelaration = Random.Range(3f,23f);
+        accelaration = (float)RandomVariables.uniform(3, 23);
+
         //start
         canvas.SetActive(true);
         isPowering = true;
@@ -70,7 +71,8 @@ public class PowerMinigame : MonoBehaviour{
         isPowering = false;
         canvas.SetActive(false);
     }
-    public bool isRunning(){
+    public bool isRunning()
+    {
         return isPowering;
     }
 }

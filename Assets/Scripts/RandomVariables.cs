@@ -1,4 +1,7 @@
 using System;
+using System.IO;
+using System.Reflection;
+using System.Text;
 using System.Threading;
 using UnityEditor.PackageManager;
 using UnityEngine;
@@ -33,55 +36,80 @@ public class RandomVariables : MonoBehaviour
         return xMin + (xMax - xMin) * u;
     }
 
-    public static double normal(double mu, double sigma)
+    public static double erlang(double b, int c)
     {
-        double p, p1, p2;
-        do
-        {
-            p1 = uniform(-1, 1);
-            p2 = uniform(-1, 1);
-            p = p1 * p1 + p2 * p2;
-        } while (p >= 1);
+        double prod = 1.0;
+        for (int i = 0; i < c; i++) prod *= uniform(0, 1);
+        return -b * Math.Log(prod);
+    }
 
-        return mu + sigma * p1 * Math.Sqrt(-2 * Math.Log(p) / p);
-    }
-    static double exponential(double lambda)
+    static double logarithmic(double xMin, double xMax)
     {
-        double u = new Random().NextDouble();
-        return -Math.Log(u) * lambda;
+        double a = xMin; // location parameter
+        double b = xMax - xMin; // scale parameter
+        return a + b * uniform(0, 1 ) * uniform(0, 1 );
     }
-    public static int finalPrice(int price, double lambda){
-        return (int)(price*exponential(lambda));
+    public static int finalPrice(int price)
+    {
+        return (int)(price - price * logarithmic(0, 1));
     }
 
     // Functions
     // reset numberOfTries to 0 when fish is catched
-    public static int waitingTime(double rarityCana)
+    public static int waitingTime(int c)
     {
-        // o jogador vai esperar em meida 10000 ms * a raridade da cada 
-        double mu = 10000 * (1 - rarityCana);
-        return 1;
-        // return (int)(normal(mu, 1000));
+        return (int)(Math.Round(erlang(1, c), 1) * 1000);
     }
 
     public static bool catchAFish(int numberOfTries, double mingameScore)
     {
-        return uniformDiscrete(1, ObterIntervaloUniforme(mingameScore)) <= numberOfTries;
+        return uniformDiscrete(0, ObterIntervaloUniforme(mingameScore)) <= numberOfTries;
     }
-    public static int ObterIntervaloUniforme(double rarityCana)
-    { // invés de receber a raidade recebe um valor do mini game1
-        double limiteSuperiorBase = 10;
-        int limiteSuperior = (int)((limiteSuperiorBase * (rarityCana)));
-        return limiteSuperior;
+
+    // result => [0, 40]
+    public static int ObterIntervaloUniforme(double mingameScore)
+    {
+        double proportion = 0.3;
+        return 40 - (int)(mingameScore * proportion);
     }
 
     public static Level catchAFishByRarity(double isca)
     {
-        int binomialRandomVariable = binomial(5, isca);
+        int binomialRandomVariable = binomial(2, isca);
         return LevelMethods.getLevel(binomialRandomVariable);
     }
 
-    public void test()
+    public static void saveFile()
     {
+        Int64 x;
+        try
+        {
+            // Mudar Diretoria
+            StreamWriter sw = new StreamWriter("C:\\Users\\alexm\\Desktop\\Worksplace\\Unity\\Fishy-Game-Business-Edition\\Assets\\Results.txt", false, Encoding.ASCII);
+
+            // Variables
+            // double isca = 0.8;
+            // double minigameScore = 50;
+            // int c = 0;
+            // double min = 0;
+            // double max = 1;
+            // int price = 100;
+
+            for (x = 0; x < 100000; x++)
+            {
+                // sw.WriteLine(price - price * logarithmic(min, max)); Colocar Distribuição
+            }
+
+            //close the file
+            sw.Close();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("Exception: " + e.Message);
+        }
+        finally
+        {
+            Console.WriteLine("Executing finally block.");
+        }
     }
 }
