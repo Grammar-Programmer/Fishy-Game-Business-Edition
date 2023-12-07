@@ -42,20 +42,23 @@ public class RandomVariables : MonoBehaviour
         for (int i = 0; i < c; i++) prod *= uniform(0, 1);
         return -b * Math.Log(prod);
     }
-    static double exponential(double lambda)
+
+    static double logarithmic(double xMin, double xMax)
     {
-        double u = new Random().NextDouble();
-        return -Math.Log(u) * lambda;
+        double a = xMin; // location parameter
+        double b = xMax - xMin; // scale parameter
+        return a + b * uniform(0, 1 ) * uniform(0, 1 );
     }
-    public static int finalPrice(int price, double lambda){
-        return (int)(price*exponential(lambda));
+    public static int finalPrice(int price)
+    {
+        return (int)(price - price * logarithmic(0, 1));
     }
 
     // Functions
     // reset numberOfTries to 0 when fish is catched
     public static int waitingTime(int c)
     {
-        return (int)erlang(1, c) * 1000;
+        return (int)(Math.Round(erlang(1, c), 1) * 1000);
     }
 
     public static bool catchAFish(int numberOfTries, double mingameScore)
@@ -81,17 +84,20 @@ public class RandomVariables : MonoBehaviour
         Int64 x;
         try
         {
-            //Open the File
+            // Mudar Diretoria
             StreamWriter sw = new StreamWriter("C:\\Users\\alexm\\Desktop\\Worksplace\\Unity\\Fishy-Game-Business-Edition\\Assets\\Results.txt", false, Encoding.ASCII);
 
             // Variables
             // double isca = 0.8;
             // double minigameScore = 50;
-            int c = 0;
+            // int c = 0;
+            // double min = 0;
+            // double max = 1;
+            // int price = 100;
 
             for (x = 0; x < 100000; x++)
             {
-                sw.WriteLine((float)erlang(1, c));
+                // sw.WriteLine(price - price * logarithmic(min, max)); Colocar Distribuição
             }
 
             //close the file

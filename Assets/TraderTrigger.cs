@@ -13,7 +13,6 @@ public class TraderTrigger : MonoBehaviour{
     }
     private void OnTriggerStay2D(Collider2D other){
         if(other.CompareTag("Player") && Input.GetKey(KeyCode.E)){
-            RandomVariables.saveFile();
             GameManager.instance.floatingTextManager.GetFloatingText().Hide();
             GameManager.instance.inventoryManager.normalMode=false;
             GameManager.instance.inventoryManager.uptadeTrader();
