@@ -28,7 +28,7 @@ public class FloatingTextManager : MonoBehaviour
     {
         FloatingText floatingText = GetFloatingText();
         floatingText.txt.text = msg;
-        floatingText.txt.fontSize = fontSize;
+        floatingText.txt.fontSize = fontSize + 2;
         floatingText.txt.color = Color.black;
         floatingText.txt.fontStyle = FontStyle.Normal;
         // Set the font style for a TextBox (you can use other controls as needed)

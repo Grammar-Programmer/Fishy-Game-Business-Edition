@@ -17,4 +17,4 @@ MonoBehaviour:
   stacktable: 1
   image: {fileID: 21300000, guid: 9bceaa01adcfa004cbcb6e92b1b1fdc5, type: 3}
   price: 5
-  nextPrice: 4
+  nextPrice: 5

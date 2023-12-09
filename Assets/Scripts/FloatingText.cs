@@ -34,8 +34,8 @@ public class FloatingText
     public Vector3 CalculateTextPosition(Vector3 objectPosition)
     {
 
-        float x = 800 / 2.0f;
-        float y = 400 / 2.0f;
+        float x = 1920 / 2.0f;
+        float y = (1080 - 350) / 2.0f;
         float z = objectPosition.z;
 
         return new Vector3(x, y, z);

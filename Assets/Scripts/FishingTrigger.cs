@@ -40,6 +40,7 @@ public class FishingTrigger : MonoBehaviour
             return;
         if (canFish && timeWaited)
         {
+            GameManager.instance.player.started = true;
             string txt = GameManager.instance.inventoryManager.selectedFishingRod == null ? "You don't have a selected FishingRod. Select it and press E again!" : "Press E to Start Fishing";
             GameManager.instance.floatingTextManager.GetFloatingText().Hide();
             GameManager.instance.ShowText(txt, 20, Color.yellow, new Vector3(transform.position.x, transform.position.y - 1, transform.position.z), Vector3.down, 0, true);
@@ -48,6 +49,7 @@ public class FishingTrigger : MonoBehaviour
         }
         if (canFish && Input.GetKeyDown(KeyCode.E))
         {
+            GameManager.instance.player.started = false;
             canFish = false;
             GameManager.instance.floatingTextManager.GetFloatingText().Hide();
             FishingRod fishingRod = GameManager.instance.inventoryManager.selectedFishingRod;
@@ -106,13 +108,14 @@ public class FishingTrigger : MonoBehaviour
                 GameManager.instance.inventoryManager.addItem(LevelMethods.GetFishRarity(level));
             }
             else GameManager.instance.ShowText("You lost a Fish! Try again by pressing E!", 20, Color.yellow, new Vector3(transform.position.x, transform.position.y - 1, transform.position.z), Vector3.down, 3, false);
+            GameManager.instance.player.started = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-           string txt = GameManager.instance.inventoryManager.selectedFishingRod == null ? "You don't have a selected FishingRod. Select it and press E!" : "Press E to Start Fishing";
+            string txt = GameManager.instance.inventoryManager.selectedFishingRod == null ? "You don't have a selected FishingRod. Select it and press E!" : "Press E to Start Fishing";
             GameManager.instance.floatingTextManager.GetFloatingText().Hide();
             GameManager.instance.ShowText(txt, 20, Color.yellow, new Vector3(transform.position.x, transform.position.y - 1, transform.position.z), Vector3.down, 0, true);
             canFish = true;

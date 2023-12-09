@@ -16,5 +16,5 @@ MonoBehaviour:
   rarity: Rare
   stacktable: 1
   image: {fileID: 21300000, guid: f59c1f9062a0ced439be8a267a8cc0dd, type: 3}
-  price: 8
-  nextPrice: 8
+  price: 40
+  nextPrice: 40

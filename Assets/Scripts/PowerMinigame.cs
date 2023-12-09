@@ -60,7 +60,7 @@ public class PowerMinigame : MonoBehaviour
         powerFill.color = Color.white;
         speed = 100.0f;
         //Uniform distribuiton
-        accelaration = (float)RandomVariables.uniform(3, 23);
+        accelaration = (float)RandomVariables.uniform(3, 8);
 
         //start
         canvas.SetActive(true);
