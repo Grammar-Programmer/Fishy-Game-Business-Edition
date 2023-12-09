@@ -56,7 +56,7 @@ public class SelectMiniGame : MonoBehaviour
     }
     void SetDifficultyParameteres()
     {
-        cursorSpeed = 200 + difficulty*100;
+        cursorSpeed = 400 + difficulty*100;
         SetBlueRectangle();
     }
     public void SetDifficulty(int newDifficulty){difficulty = newDifficulty;}

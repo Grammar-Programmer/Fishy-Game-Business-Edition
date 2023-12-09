@@ -193,11 +193,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1380798126769378432, guid: 7f4228a835743cd479e1c181a97d9f0e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1380798126769378432, guid: 7f4228a835743cd479e1c181a97d9f0e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -103.9
+      value: -97
       objectReference: {fileID: 0}
     - target: {fileID: 1380798126769378432, guid: 7f4228a835743cd479e1c181a97d9f0e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -558,8 +558,8 @@ Transform:
   m_GameObject: {fileID: 762199353}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -400.0451, y: -300.0625, z: 0}
-  m_LocalScale: {x: 1.6800486, y: 1.6912298, z: 1.6688671}
+  m_LocalPosition: {x: -400.14, y: -225.17, z: 0}
+  m_LocalScale: {x: 0.983913, y: 0.99046123, z: 0.9773646}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1935960001}
@@ -598,8 +598,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.3, y: -0.7}
-  m_SizeDelta: {x: 179.7136, y: 51.776}
+  m_AnchoredPosition: {x: -5.1, y: 7.9}
+  m_SizeDelta: {x: 286.3833, y: 66.4671}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1085075500
 MonoBehaviour:
@@ -648,8 +648,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63.01
-  m_fontSizeBase: 63.01
+  m_fontSize: 120
+  m_fontSizeBase: 120
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -684,7 +684,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -84.95264, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -724,7 +724,7 @@ Transform:
   m_GameObject: {fileID: 1178396115}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7, y: -6.9, z: 0}
+  m_LocalPosition: {x: -1024, y: -652, z: 0}
   m_LocalScale: {x: 125.013824, y: 180.55772, z: 31.886782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -809,8 +809,8 @@ Transform:
   m_GameObject: {fileID: 1427454424}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -392.4, y: -300.1, z: 0}
-  m_LocalScale: {x: 0.7230131, y: 0.6903316, z: 0.7582728}
+  m_LocalPosition: {x: -950.4, y: -540, z: 0}
+  m_LocalScale: {x: 0.6517963, y: 0.6223339, z: 0.68358296}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 740124510}
@@ -922,7 +922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -149, y: 205}
+  m_AnchoredPosition: {x: -149, y: 162}
   m_SizeDelta: {x: 340.0872, y: 221.0566}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1450094052
@@ -1094,11 +1094,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1380798126769378432, guid: 7f4228a835743cd479e1c181a97d9f0e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1380798126769378432, guid: 7f4228a835743cd479e1c181a97d9f0e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -204.1
+      value: -181
       objectReference: {fileID: 0}
     - target: {fileID: 1380798126769378432, guid: 7f4228a835743cd479e1c181a97d9f0e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
+  m_IgnoreReversedGraphics: 0
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
@@ -1280,6 +1280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da411927cc92ea14bb7ca361c274d78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorTex: {fileID: 2800000, guid: 401fd8b6d544ada4a8e9a3cc52c585ac, type: 3}
   loadingScreen: {fileID: 740124504}
   menuScreen: {fileID: 1935959997}
 --- !u!1 &2040102263

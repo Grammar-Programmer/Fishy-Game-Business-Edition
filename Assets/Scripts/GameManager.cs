@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public Texture2D cursorTex;
     public static GameManager instance;
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
         instance = this;
         // SceneManager.sceneLoaded +=LoadState;
         DontDestroyOnLoad(gameObject);
+        // Cursor.SetCursor(cursorTex, Vector2.zero, CursorMode.ForceSoftware);
     }
     //Resources
     public List<Sprite> playerSprites;
