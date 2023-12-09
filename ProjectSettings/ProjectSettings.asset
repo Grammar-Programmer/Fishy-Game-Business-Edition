@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: "Alexandre Andr\xE9 Oleg Oliver"
   productName: Fishy Game Business Edition
-  defaultCursor: {fileID: 2800000, guid: 401fd8b6d544ada4a8e9a3cc52c585ac, type: 3}
+  defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1

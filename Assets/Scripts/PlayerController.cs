@@ -11,13 +11,19 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D theRB;
     public float moveSpeed;
     public Vector2 velocity;
-
+    public bool started;
     public Animator anim;
     private bool isFacedLeft;
 
+    void Start()
+    {
+        started = true;
+    }
     // Update is called once per frame
     void Update()
     {
+        if (!started) return;
+
         // Player Movement
         theRB.velocity = new Vector2(velocity.x * moveSpeed, velocity.y * moveSpeed);
 
